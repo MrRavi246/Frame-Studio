@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame Studio - Logo Preview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px;
+        }
+        
+        h1 {
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.02);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 168, 255, 0.5);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .logo-card svg {
+            width: 100px;
+            height: 100px;
+            filter: drop-shadow(0 0 15px rgba(0, 168, 255, 0.2));
+        }
+        
+        .logo-name {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FRAME STUDIO - LOGO CONCEPTS</h1>
+
+    <div class="logo-grid">
+        <!-- Concept 1: The Viewfinder (Original) -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path d="M40 80 V 40 H 80" stroke="url(#grad1)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <path d="M120 40 H 160 V 80" stroke="url(#grad1)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <path d="M160 120 V 160 H 120" stroke="url(#grad1)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <path d="M80 160 H 40 V 120" stroke="url(#grad1)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <rect x="85" y="85" width="30" height="30" rx="5" fill="white" />
+            </svg>
+            <span class="logo-name">Concept 1: The Viewfinder</span>
+        </div>
+
+        <!-- Concept 2: Interlocking Frames -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="80" height="80" rx="10" stroke="white" stroke-width="12" fill="none" opacity="0.5"/>
+                <rect x="80" y="80" width="80" height="80" rx="10" stroke="url(#grad1)" stroke-width="12" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 2: Interlocking Frames</span>
+        </div>
+
+        <!-- Concept 3: The Focus Bracket -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M60 50 H 40 V 150 H 60" stroke="url(#grad1)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <path d="M140 50 H 160 V 150 H 140" stroke="url(#grad1)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <circle cx="100" cy="100" r="25" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 3: Focus Point</span>
+        </div>
+
+        <!-- Concept 4: Abstract F Monogram -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M60 40 H 140 V 70 H 90 V 100 H 130 V 130 H 90 V 160 H 60 V 40" fill="url(#grad1)"/>
+                <rect x="110" y="110" width="50" height="50" stroke="white" stroke-width="8" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 4: Abstract 'F' Frame</span>
+        </div>
+
+        <!-- Concept 5: The Shutter -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="70" stroke="rgba(255,255,255,0.2)" stroke-width="5" fill="none"/>
+                <path d="M100 40 L 100 100 L 150 130" stroke="url(#grad1)" stroke-width="12" stroke-linecap="round"/>
+                <path d="M100 100 L 50 130" stroke="url(#grad1)" stroke-width="12" stroke-linecap="round"/>
+                <circle cx="100" cy="100" r="15" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 5: The Shutter</span>
+        </div>
+
+        <!-- Concept 6: Digital Hex -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M50 75 L 100 45 L 150 75 L 150 125 L 100 155 L 50 125 Z" stroke="url(#grad1)" stroke-width="10" fill="none"/>
+                <path d="M100 45 V 100 M 150 125 L 100 100 M 50 125 L 100 100" stroke="rgba(255,255,255,0.3)" stroke-width="5"/>
+                <circle cx="100" cy="100" r="10" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 6: Digital Hex</span>
+        </div>
+        
+        <!-- Concept 7: Minimal Square -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="white" stroke-width="8" fill="none"/>
+                <rect x="85" y="40" width="30" height="20" fill="url(#grad1)"/>
+                <rect x="85" y="140" width="30" height="20" fill="url(#grad1)"/>
+                <rect x="40" y="85" width="20" height="30" fill="url(#grad1)"/>
+                <rect x="140" y="85" width="20" height="30" fill="url(#grad1)"/>
+            </svg>
+            <span class="logo-name">Concept 7: Minimal Square</span>
+        </div>
+
+        <!-- Concept 8: Media Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="120" height="120" rx="20" stroke="url(#grad1)" stroke-width="10" fill="none"/>
+                <path d="M85 75 L 125 100 L 85 125 Z" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 8: Media Frame</span>
+        </div>
+
+        <!-- Concept 9: Bold Corners -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M50 90 V 50 H 90" stroke="url(#grad1)" stroke-width="20" stroke-linecap="square" fill="none"/>
+                <path d="M150 110 V 150 H 110" stroke="url(#grad1)" stroke-width="20" stroke-linecap="square" fill="none"/>
+                <rect x="90" y="90" width="20" height="20" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 9: Bold Corners</span>
+        </div>
+
+        <!-- Concept 10: Thin Elegant -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="120" height="120" stroke="url(#grad1)" stroke-width="2" fill="none"/>
+                <rect x="50" y="50" width="100" height="100" stroke="white" stroke-width="1" fill="none"/>
+                <circle cx="100" cy="100" r="5" fill="url(#grad1)"/>
+            </svg>
+            <span class="logo-name">Concept 10: Thin Elegant</span>
+        </div>
+
+        <!-- Concept 11: Split Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M40 40 H 160 V 160 H 40 Z" stroke="white" stroke-width="4" fill="none"/>
+                <path d="M40 160 L 160 40" stroke="url(#grad1)" stroke-width="8"/>
+            </svg>
+            <span class="logo-name">Concept 11: Split Frame</span>
+        </div>
+
+        <!-- Concept 12: Dash Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="url(#grad1)" stroke-width="8" stroke-dasharray="20,10" fill="none"/>
+                <circle cx="100" cy="100" r="15" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 12: Dash Frame</span>
+        </div>
+
+        <!-- Concept 13: Dot Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="url(#grad1)" stroke-width="8" stroke-dasharray="1,15" stroke-linecap="round" fill="none"/>
+                <rect x="80" y="80" width="40" height="40" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 13: Dot Frame</span>
+        </div>
+
+        <!-- Concept 14: Double Offset -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="100" height="100" stroke="rgba(255,255,255,0.3)" stroke-width="5" fill="none"/>
+                <rect x="60" y="60" width="100" height="100" stroke="url(#grad1)" stroke-width="5" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 14: Double Offset</span>
+        </div>
+
+        <!-- Concept 15: Triple Stack -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="120" height="120" stroke="rgba(255,255,255,0.1)" stroke-width="4" fill="none"/>
+                <rect x="55" y="55" width="90" height="90" stroke="rgba(255,255,255,0.4)" stroke-width="4" fill="none"/>
+                <rect x="70" y="70" width="60" height="60" stroke="url(#grad1)" stroke-width="6" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 15: Triple Stack</span>
+        </div>
+
+        <!-- Concept 16: Rotating Frames -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="60" y="60" width="80" height="80" stroke="rgba(255,255,255,0.3)" stroke-width="4" fill="none" transform="rotate(15, 100, 100)"/>
+                <rect x="60" y="60" width="80" height="80" stroke="url(#grad1)" stroke-width="4" fill="none" transform="rotate(-15, 100, 100)"/>
+            </svg>
+            <span class="logo-name">Concept 16: Rotating Frames</span>
+        </div>
+
+        <!-- Concept 17: F-Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M50 50 H 150 V 80 H 80 V 100 H 130 V 130 H 80 V 150 H 50 Z" stroke="url(#grad1)" stroke-width="5" fill="none"/>
+                <rect x="90" y="60" width="50" height="80" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 17: F-Frame</span>
+        </div>
+
+        <!-- Concept 18: S-Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M150 50 H 50 V 100 H 150 V 150 H 50" stroke="url(#grad1)" stroke-width="15" stroke-linecap="round" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 18: S-Frame</span>
+        </div>
+
+        <!-- Concept 19: FS-Monogram -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <text x="50" y="140" font-family="Arial" font-weight="bold" font-size="100" fill="white">F</text>
+                <text x="100" y="140" font-family="Arial" font-weight="bold" font-size="100" fill="url(#grad1)">S</text>
+            </svg>
+            <span class="logo-name">Concept 19: FS Monogram</span>
+        </div>
+
+        <!-- Concept 20: Studio Aperture -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="80" stroke="white" stroke-width="2" fill="none"/>
+                <path d="M100 100 L 100 20 M 100 100 L 170 60 M 100 100 L 170 140 M 100 100 L 100 180 M 100 100 L 30 140 M 100 100 L 30 60" stroke="url(#grad1)" stroke-width="4"/>
+            </svg>
+            <span class="logo-name">Concept 20: Studio Aperture</span>
+        </div>
+
+        <!-- Concept 21: Lens Glare -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="80" cy="80" r="60" fill="url(#grad1)" opacity="0.5"/>
+                <circle cx="120" cy="120" r="40" fill="white" opacity="0.3"/>
+                <circle cx="140" cy="60" r="20" fill="white" opacity="0.8"/>
+            </svg>
+            <span class="logo-name">Concept 21: Lens Glare</span>
+        </div>
+
+        <!-- Concept 22: Pixel Corner -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="20" height="20" fill="url(#grad1)"/>
+                <rect x="65" y="40" width="20" height="20" fill="url(#grad1)"/>
+                <rect x="40" y="65" width="20" height="20" fill="url(#grad1)"/>
+                
+                <rect x="140" y="140" width="20" height="20" fill="url(#grad1)"/>
+                <rect x="115" y="140" width="20" height="20" fill="url(#grad1)"/>
+                <rect x="140" y="115" width="20" height="20" fill="url(#grad1)"/>
+                
+                <rect x="90" y="90" width="20" height="20" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 22: Pixel Corner</span>
+        </div>
+
+        <!-- Concept 23: Glitch Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="white" stroke-width="4" fill="none"/>
+                <rect x="55" y="45" width="100" height="100" stroke="url(#grad1)" stroke-width="4" fill="none" opacity="0.7"/>
+                <path d="M40 80 H 160" stroke="black" stroke-width="5"/>
+            </svg>
+            <span class="logo-name">Concept 23: Glitch Box</span>
+        </div>
+
+        <!-- Concept 24: Scanline Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="url(#grad1)" stroke-width="5" fill="none"/>
+                <path d="M55 65 H 145 M 55 85 H 145 M 55 105 H 145 M 55 125 H 145" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+            </svg>
+            <span class="logo-name">Concept 24: Scanline Box</span>
+        </div>
+
+        <!-- Concept 25: Play Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" rx="10" fill="url(#grad1)"/>
+                <path d="M85 75 L 125 100 L 85 125 Z" fill="black"/>
+            </svg>
+            <span class="logo-name">Concept 25: Play Box</span>
+        </div>
+
+        <!-- Concept 26: Rec Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="white" stroke-width="5" fill="none"/>
+                <circle cx="100" cy="100" r="20" fill="url(#grad1)"/>
+            </svg>
+            <span class="logo-name">Concept 26: Rec Box</span>
+        </div>
+
+        <!-- Concept 27: Pause Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="url(#grad1)" stroke-width="5" fill="none"/>
+                <rect x="80" y="75" width="15" height="50" fill="white"/>
+                <rect x="105" y="75" width="15" height="50" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 27: Pause Box</span>
+        </div>
+
+        <!-- Concept 28: Target Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="50" y="50" width="100" height="100" stroke="white" stroke-width="4" fill="none"/>
+                <line x1="100" y1="40" x2="100" y2="160" stroke="url(#grad1)" stroke-width="2"/>
+                <line x1="40" y1="100" x2="160" y2="100" stroke="url(#grad1)" stroke-width="2"/>
+                <circle cx="100" cy="100" r="30" stroke="url(#grad1)" stroke-width="2" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 28: Target Box</span>
+        </div>
+
+        <!-- Concept 29: Crop Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M60 60 H 140 V 140 H 60 Z" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                <path d="M50 50 V 120 H 70" stroke="url(#grad1)" stroke-width="8" fill="none"/>
+                <path d="M150 150 V 80 H 130" stroke="url(#grad1)" stroke-width="8" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 29: Crop Box</span>
+        </div>
+
+        <!-- Concept 30: Expand Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="70" y="70" width="60" height="60" stroke="white" stroke-width="4" fill="none"/>
+                <path d="M60 60 L 40 40 M 140 60 L 160 40 M 60 140 L 40 160 M 140 140 L 160 160" stroke="url(#grad1)" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-name">Concept 30: Expand Box</span>
+        </div>
+
+        <!-- Concept 31: Contract Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="40" y="40" width="120" height="120" stroke="rgba(255,255,255,0.2)" stroke-width="2" fill="none"/>
+                <path d="M40 40 L 70 70 M 160 40 L 130 70 M 40 160 L 70 130 M 160 160 L 130 130" stroke="url(#grad1)" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-name">Concept 31: Contract Box</span>
+        </div>
+
+        <!-- Concept 32: Infinity Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M60 100 C 60 50, 100 50, 100 100 C 100 150, 140 150, 140 100 C 140 50, 100 50, 100 100 C 100 150, 60 150, 60 100 Z" stroke="url(#grad1)" stroke-width="8" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 32: Infinity Loop</span>
+        </div>
+
+        <!-- Concept 33: Hex Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M50 75 L 100 45 L 150 75 L 150 125 L 100 155 L 50 125 Z" stroke="white" stroke-width="4" fill="none"/>
+                <path d="M100 45 L 100 155" stroke="url(#grad1)" stroke-width="2"/>
+                <path d="M50 75 L 150 125" stroke="url(#grad1)" stroke-width="2"/>
+                <path d="M150 75 L 50 125" stroke="url(#grad1)" stroke-width="2"/>
+            </svg>
+            <span class="logo-name">Concept 33: Hex Frame</span>
+        </div>
+
+        <!-- Concept 34: Octo Frame -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M70 40 H 130 L 160 70 V 130 L 130 160 H 70 L 40 130 V 70 Z" stroke="url(#grad1)" stroke-width="8" fill="none"/>
+                <circle cx="100" cy="100" r="20" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 34: Octo Frame</span>
+        </div>
+
+        <!-- Concept 35: Circle Crop -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="60" stroke="white" stroke-width="2" fill="none"/>
+                <path d="M40 40 L 60 60 M 160 40 L 140 60 M 40 160 L 60 140 M 160 160 L 140 140" stroke="url(#grad1)" stroke-width="8" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-name">Concept 35: Circle Crop</span>
+        </div>
+
+        <!-- Concept 36: Dynamic Wave -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M50 50 H 150 V 150 H 50 V 50" stroke="white" stroke-width="4" fill="none"/>
+                <path d="M50 100 Q 100 50, 150 100" stroke="url(#grad1)" stroke-width="6" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 36: Dynamic Wave</span>
+        </div>
+
+        <!-- Concept 37: Perspective Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M60 60 H 140 L 160 140 H 40 Z" stroke="url(#grad1)" stroke-width="6" fill="none"/>
+                <rect x="80" y="80" width="40" height="40" fill="white" opacity="0.5"/>
+            </svg>
+            <span class="logo-name">Concept 37: Perspective Box</span>
+        </div>
+
+        <!-- Concept 38: Open Box -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M50 50 V 150 H 150 V 50" stroke="url(#grad1)" stroke-width="10" fill="none"/>
+                <circle cx="100" cy="100" r="20" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 38: Open Box</span>
+        </div>
+
+        <!-- Concept 39: Corner Dots -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <circle cx="50" cy="50" r="15" fill="url(#grad1)"/>
+                <circle cx="150" cy="50" r="15" fill="url(#grad1)"/>
+                <circle cx="150" cy="150" r="15" fill="url(#grad1)"/>
+                <circle cx="50" cy="150" r="15" fill="url(#grad1)"/>
+                <rect x="70" y="70" width="60" height="60" stroke="white" stroke-width="2" fill="none"/>
+            </svg>
+            <span class="logo-name">Concept 39: Corner Dots</span>
+        </div>
+
+        <!-- Concept 40: Side Brackets -->
+        <div class="logo-card">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <path d="M70 40 H 40 V 160 H 70" stroke="url(#grad1)" stroke-width="12" fill="none"/>
+                <path d="M130 40 H 160 V 160 H 130" stroke="url(#grad1)" stroke-width="12" fill="none"/>
+                <rect x="85" y="85" width="30" height="30" fill="white"/>
+            </svg>
+            <span class="logo-name">Concept 40: Side Brackets</span>
+        </div>
+    </div>
+
+</body>
+</html>
