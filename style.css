@@ -223,6 +223,29 @@ nav ul li a:hover, nav ul li a.active {
     letter-spacing: 1px;
 }
 
+/* Footer */
+footer {
+    margin-top: auto;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     header {
